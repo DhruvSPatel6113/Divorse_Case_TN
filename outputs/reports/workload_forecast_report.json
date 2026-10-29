@@ -1,0 +1,218 @@
+{
+  "filings_forecast": {
+    "target": "cases_filed",
+    "train_years": "2018 to 2022",
+    "test_years": "2023 to 2024",
+    "actual_test_values": [
+      33850,
+      34120
+    ],
+    "model_evaluations": {
+      "naive_baseline": {
+        "name": "Naive Baseline (Persistence)",
+        "predictions": [
+          31240.0,
+          31240.0
+        ],
+        "metrics": {
+          "mae": 2745.0,
+          "rmse": 2748.32,
+          "mape_pct": 8.08
+        },
+        "description": "Assumes future filings remain constant at the last observed historical level."
+      },
+      "moving_average": {
+        "name": "Moving Average (Window=2)",
+        "predictions": [
+          27715.0,
+          27715.0
+        ],
+        "metrics": {
+          "mae": 6270.0,
+          "rmse": 6271.45,
+          "mape_pct": 18.45
+        },
+        "description": "Average of the two most recent historical observation periods."
+      },
+      "exponential_smoothing": {
+        "name": "Holt Exponential Smoothing",
+        "predictions": [
+          26681.1,
+          26840.7
+        ],
+        "metrics": {
+          "mae": 7224.06,
+          "rmse": 7224.27,
+          "mape_pct": 21.26
+        },
+        "description": "Models level and linear trend with exponential weighting on recent periods."
+      },
+      "poisson_glm": {
+        "name": "Poisson Count GLM",
+        "predictions": [
+          34094.3,
+          28909.0
+        ],
+        "metrics": {
+          "mae": 2727.66,
+          "rmse": 3688.77,
+          "mape_pct": 8.0
+        },
+        "description": "Count regression modeling filings as a function of time trend and court infrastructure capacity."
+      },
+      "arima": {
+        "name": "ARIMA(1, 1, 0)",
+        "predictions": [
+          31260.8,
+          31260.9
+        ],
+        "metrics": {
+          "mae": 2724.13,
+          "rmse": 2727.47,
+          "mape_pct": 8.01
+        },
+        "description": "Autoregressive integrated moving average capturing serial dependency."
+      }
+    },
+    "best_model": "arima",
+    "future_projections": {
+      "target": "cases_filed",
+      "best_model_architecture": "ARIMA(1, 1, 0)",
+      "projection_2025": {
+        "year": 2025,
+        "point_forecast": 34232.0,
+        "interval_80_pct": [
+          28668.0,
+          39796.0
+        ],
+        "interval_95_pct": [
+          25713.0,
+          42752.0
+        ]
+      },
+      "projection_2026": {
+        "year": 2026,
+        "point_forecast": 35684.0,
+        "interval_80_pct": [
+          27816.0,
+          43551.0
+        ],
+        "interval_95_pct": [
+          23637.0,
+          47731.0
+        ]
+      },
+      "scope_caveat": "JUDICIAL WORKLOAD CAVEAT: This aggregate workload forecast estimates macro court system caseload to assist judicial administration. It CANNOT predict the outcome, duration, or probability of an individual person's case."
+    }
+  },
+  "pendency_forecast": {
+    "target": "cases_pending",
+    "train_years": "2018 to 2022",
+    "test_years": "2023 to 2024",
+    "actual_test_values": [
+      34310,
+      31655
+    ],
+    "model_evaluations": {
+      "naive_baseline": {
+        "name": "Naive Baseline (Persistence)",
+        "predictions": [
+          35880.0,
+          35880.0
+        ],
+        "metrics": {
+          "mae": 2897.5,
+          "rmse": 3187.12,
+          "mape_pct": 8.96
+        },
+        "description": "Assumes future filings remain constant at the last observed historical level."
+      },
+      "moving_average": {
+        "name": "Moving Average (Window=2)",
+        "predictions": [
+          36850.0,
+          36850.0
+        ],
+        "metrics": {
+          "mae": 3867.5,
+          "rmse": 4088.99,
+          "mape_pct": 11.91
+        },
+        "description": "Average of the two most recent historical observation periods."
+      },
+      "exponential_smoothing": {
+        "name": "Holt Exponential Smoothing",
+        "predictions": [
+          40169.1,
+          42348.1
+        ],
+        "metrics": {
+          "mae": 8276.11,
+          "rmse": 8621.84,
+          "mape_pct": 25.43
+        },
+        "description": "Models level and linear trend with exponential weighting on recent periods."
+      },
+      "poisson_glm": {
+        "name": "Poisson Count GLM",
+        "predictions": [
+          37812.3,
+          42518.7
+        ],
+        "metrics": {
+          "mae": 7182.99,
+          "rmse": 8071.12,
+          "mape_pct": 22.26
+        },
+        "description": "Count regression modeling filings as a function of time trend and court infrastructure capacity."
+      },
+      "arima": {
+        "name": "ARIMA(1, 1, 0)",
+        "predictions": [
+          35638.7,
+          35608.7
+        ],
+        "metrics": {
+          "mae": 2641.21,
+          "rmse": 2949.35,
+          "mape_pct": 8.18
+        },
+        "description": "Autoregressive integrated moving average capturing serial dependency."
+      }
+    },
+    "best_model": "arima",
+    "future_projections": {
+      "target": "cases_pending",
+      "best_model_architecture": "ARIMA(1, 1, 0)",
+      "projection_2025": {
+        "year": 2025,
+        "point_forecast": 29000.0,
+        "interval_80_pct": [
+          26560.0,
+          31440.0
+        ],
+        "interval_95_pct": [
+          25264.0,
+          32736.0
+        ]
+      },
+      "projection_2026": {
+        "year": 2026,
+        "point_forecast": 26345.0,
+        "interval_80_pct": [
+          22895.0,
+          29795.0
+        ],
+        "interval_95_pct": [
+          21062.0,
+          31628.0
+        ]
+      },
+      "scope_caveat": "JUDICIAL WORKLOAD CAVEAT: This aggregate workload forecast estimates macro court system caseload to assist judicial administration. It CANNOT predict the outcome, duration, or probability of an individual person's case."
+    }
+  },
+  "saved_model_artifacts": {
+    "arima_cases_filed": "outputs\\models\\arima_cases_filed_model.joblib",
+    "arima_cases_pending": "outputs\\models\\arima_cases_pending_model.joblib"
+  }
+}

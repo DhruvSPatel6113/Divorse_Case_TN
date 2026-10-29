@@ -1,0 +1,40 @@
+project:
+  name: "Analyzing Divorce Cases in Tamil Nadu"
+  subtitle: "Judicial Trends, Demographic Patterns, Statistical Inference, and Predictive Analytics"
+  version: "1.0.0"
+  state: "Tamil Nadu"
+  state_code: 33
+  default_language: "en"
+
+paths:
+  data_raw: "data/raw"
+  data_interim: "data/interim"
+  data_processed: "data/processed"
+  data_metadata: "data/metadata"
+  outputs_figures: "outputs/figures"
+  outputs_tables: "outputs/tables"
+  outputs_reports: "outputs/reports"
+  docs: "docs"
+
+data_quality:
+  strict_validation: true
+  min_acceptable_year: 1950
+  max_acceptable_year: 2026
+  disallow_negative_counts: true
+  distinguish_zero_and_missing: true
+
+models:
+  random_seed: 42
+  test_size: 0.2
+  time_series_horizon: 12
+  forecasting_models:
+    - "naive"
+    - "moving_average"
+    - "exponential_smoothing"
+    - "sarima"
+    - "poisson_glm"
+
+privacy:
+  persist_questionnaire_responses: false
+  allow_third_party_ai: false
+  anonymize_case_ids: true

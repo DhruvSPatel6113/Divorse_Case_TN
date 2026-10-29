@@ -1,0 +1,28 @@
+{
+  "sources": [
+    "SRC_LOK_SABHA_FAMILY_COURTS",
+    "SRC_DOJ_FAMILY_COURTS_DASHBOARD",
+    "SRC_NJDG_TN_CIVIL"
+  ],
+  "category_scope_breakdown": {
+    "time_series_scope": "matrimonial_broad",
+    "district_civil_scope": "all_cases",
+    "district_family_scope": "matrimonial_broad",
+    "divorce_specific_scope_note": "No general civil court numbers are mislabeled as divorce-specific."
+  },
+  "temporal_coverage": {
+    "start_year": 2018,
+    "end_year": 2024,
+    "annual_records_count": 7
+  },
+  "total_filings_2018_2024": 198982,
+  "total_disposals_2018_2024": 193065,
+  "latest_pending_snapshot_2024": 31655,
+  "district_coverage_count": 32,
+  "dimensions_evaluated": {
+    "completeness": 1.0,
+    "validity": 1.0,
+    "uniqueness": 1.0,
+    "consistency": 1.0
+  }
+}

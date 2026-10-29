@@ -1,0 +1,41 @@
+# Chat history (Laptop local storage only - strictly ignored from VCS/uploads)
+.chat_history/
+chat_history/
+
+# Personal & scratch files
+scratch/
+*.key
+*.pem
+*.token
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# Testing & Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Environment and secrets
+.env
+.env.local
+.env.*
+!.env.example
+
+# IDE & OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Large raw data files if needed (official data sources are tracked in source registry and downloaded/cached)
+*.tmp
+*.log

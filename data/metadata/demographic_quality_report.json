@@ -1,0 +1,71 @@
+{
+  "source_id": "SRC_CENSUS_2011_C02",
+  "file_sha256": "af3e55021810420ed57ead4fe6ac20308e1968a914e8b99a11370946746cf718",
+  "sha256_integrity_verified": true,
+  "total_raw_rows": 1980,
+  "total_clean_records": 1980,
+  "reconciliation_discrepancies": 0,
+  "geographic_coverage": {
+    "state": "Tamil Nadu",
+    "district_count": 32,
+    "districts": [
+      "Ariyalur",
+      "Chennai",
+      "Coimbatore",
+      "Cuddalore",
+      "Dharmapuri",
+      "Dindigul",
+      "Erode",
+      "Kancheepuram",
+      "Kanniyakumari",
+      "Karur",
+      "Krishnagiri",
+      "Madurai",
+      "Nagapattinam",
+      "Namakkal",
+      "Perambalur",
+      "Pudukkottai",
+      "Ramanathapuram",
+      "Salem",
+      "Sivaganga",
+      "Thanjavur",
+      "The Nilgiris",
+      "Theni",
+      "Thiruvallur",
+      "Thiruvarur",
+      "Thoothukkudi",
+      "Tiruchirappalli",
+      "Tirunelveli",
+      "Tiruppur",
+      "Tiruvannamalai",
+      "Vellore",
+      "Viluppuram",
+      "Virudhunagar"
+    ]
+  },
+  "reference_year": 2011,
+  "reconciled_state_totals": {
+    "total_population": 72147030,
+    "divorced_persons": 62948,
+    "divorced_males": 17763,
+    "divorced_females": 45185,
+    "separated_persons": 398284,
+    "separated_males": 101630,
+    "separated_females": 296654,
+    "currently_married": 37415737,
+    "never_married": 29652678,
+    "widowed": 4617383
+  },
+  "divorce_separation_metrics": {
+    "divorced_proportion_overall": 0.0008724960680987146,
+    "separated_proportion_overall": 0.00552044900531595,
+    "divorce_to_separated_ratio": 0.1580480260316759,
+    "divorced_female_to_male_ratio": 2.5437707594437877
+  },
+  "dimensions_evaluated": {
+    "completeness": 1.0,
+    "validity": 1.0,
+    "uniqueness": 1.0,
+    "consistency": 1.0
+  }
+}

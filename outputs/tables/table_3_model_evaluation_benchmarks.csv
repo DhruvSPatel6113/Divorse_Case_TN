@@ -1,0 +1,6 @@
+target,model_architecture,mae,rmse,mape_pct
+cases_filed,Naive Baseline (Persistence),2745.0,2748.32,8.08
+cases_filed,Moving Average (Window=2),6270.0,6271.45,18.45
+cases_filed,Holt Exponential Smoothing,7224.06,7224.27,21.26
+cases_filed,Poisson Count GLM,2727.66,3688.77,8.0
+cases_filed,"ARIMA(1, 1, 0)",2724.13,2727.47,8.01
